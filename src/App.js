@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import Header from './components/Header/Header'
+import About from './components/About/About'
 
 function App() {
   const [resumeData, setResumeData] = useState(null)
@@ -17,7 +18,13 @@ function App() {
 
   return (
     <>
-      {resumeData && <Header resumeData={resumeData}/>}
+      {
+        resumeData && 
+        <>
+          <Header resumeData={resumeData}/>
+          <About resumeData={resumeData}/>
+        </>
+      }
     </>
   );
 }
