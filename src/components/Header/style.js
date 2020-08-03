@@ -1,8 +1,9 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 export const HeaderContainer = styled.header`
   position: relative;
-  height: 800px;
+  height: 100vh;
   min-height: 500px;
   width: 100%;
   background: #161415 no-repeat top center;
@@ -28,7 +29,7 @@ export const Banner = styled.div`
   text-align: center;
 `
 
-export const BannerText = styled.div`
+export const BannerText = styled(motion.div)`
   width: 100%;
 
   h1 {
@@ -101,7 +102,7 @@ export const ScrollDown = styled.p`
     color: #11ABB0;
   }
 `
-export const NavWrap = styled.nav`
+export const NavWrap = styled(motion.nav)`
   font: 12px 'opensans-bold', sans-serif;
   width: 100%;
   text-transform: uppercase;
@@ -111,6 +112,7 @@ export const NavWrap = styled.nav`
   position: fixed;
   left: 0;
   top: 0;
+  background-color: ${props => props.isTop ? null : '#333'};
 
   ul, li, a {
     margin: 0;
