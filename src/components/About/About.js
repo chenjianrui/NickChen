@@ -5,7 +5,6 @@ import { SectionContainer, ProfilePic, ContactDetails } from './style'
 
 const About = ({ resumeData }) => {
   const { bio, name, email, phone, address } = resumeData.data
-  console.log(address)
   const { city, state } = address
   return (
     <SectionContainer id="about">

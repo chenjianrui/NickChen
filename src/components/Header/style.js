@@ -146,6 +146,7 @@ export const NavWrapUl = styled.ul`
     text-align: left;
     color: #fff;
     transition: color .2s ease-in-out;
+    cursor: pointer;
   }
 
   li a:active {
