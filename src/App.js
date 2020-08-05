@@ -16,8 +16,6 @@ function App() {
     const headerHeight = document.querySelector('#home').clientHeight
     const aboutHeight = document.querySelector('#about').clientHeight
     const resumeHeight = document.querySelector('#resume').clientHeight
-    console.log('aboutHeight', aboutHeight)
-    console.log(scrollY.current)
     if(scrollY.current < aboutHeight){
       setNavigation('home')
     }

@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
+import { device } from '../Device/device'
 
 export const HeaderContainer = styled.header`
   position: relative;
@@ -27,13 +28,26 @@ export const Banner = styled.div`
   width: 85%;
   padding-bottom: 30px;
   text-align: center;
+
+  @media ${device.laptop} {
+    padding-bottom: 12px;
+  }
+
+  @media ${device.tablet} {
+    padding-bottom: 12px;
+    padding-top: 6px;
+  }
+
+  @media ${device.mobileL} {
+    padding-top: 24px;
+  }
 `
 
 export const BannerText = styled(motion.div)`
   width: 100%;
 
   h1 {
-    font: 90px/1.1em "Noto Serif";
+    font: 12vw "Noto Serif";
     color: #fff;
     letter-spacing: -2px;
     margin: 0 auto 18px auto;
@@ -58,6 +72,49 @@ export const BannerText = styled(motion.div)`
     border-color: #2F2D2E;
     border-color: rgba(150, 150, 150, .1);
   }
+  @media ${device.laptop} {
+    h1 {
+      font-size: 12vw;
+      letter-spacing: -1px;
+      margin: 0 auto 12px auto;
+    } 
+
+    h3 {
+      font: 17px/1.9em 'librebaskerville-regular', serif;
+      width: 80%;
+    }
+    hr {
+      width: 65%;
+      margin: 12px auto;
+    }
+  }
+  @media ${device.tablet} {
+    h1 {
+      /* font: 68px / 1.1em 'opensans-bold',sans-serif; */
+    }
+
+    h3 {
+      font: 16px / 1.9em 'opensans-bold',sans-serif;
+      width: 85%;
+    }
+    
+    hr {
+      width: 80%;
+      margin: 10px auto;
+    }
+  }
+
+  @media ${device.mobileL} {
+    h1 {
+      font: 40px / 1.1em 'opensans-bold',sans-serif;
+      margin: 0 auto 24px auto;
+    }
+
+    h3 {
+      font: 14px / 1.9em 'opensans-bold',sans-serif;
+      width: 90%;
+    }
+  }
 `
 
 export const Social = styled.ul`
@@ -78,6 +135,23 @@ export const Social = styled.ul`
 
   li a:hover {
     color: #11ABB0
+  }
+
+  @media ${device.tablet} {
+    margin: 18px 0 24px 0;
+    font-size: 24px;
+    line-height: 36px;
+    li {
+      margin: 0 10px;
+    }
+  }
+
+  @media ${device.mobileL} {
+    font-size: 20px;
+
+    li {
+      margin: 0 6px;
+    }
   }
 `
 
@@ -101,6 +175,10 @@ export const ScrollDown = styled.p`
   a:hover {
     color: #11ABB0;
   }
+
+  @media ${device.tablet} {
+    display: none;
+  }
 `
 export const NavWrap = styled(motion.nav)`
   font: 12px 'opensans-bold', sans-serif;
@@ -119,6 +197,13 @@ export const NavWrap = styled(motion.nav)`
     padding: 0;
     border: none;
     outline: none;
+  }
+
+  @media ${device.laptop} {
+    #nav-wrap {
+      font-size: 11px;
+      letter-spacing: 1.5px;
+    }
   }
 `
 

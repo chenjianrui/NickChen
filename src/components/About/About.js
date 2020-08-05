@@ -10,7 +10,7 @@ const About = ({ resumeData }) => {
     <SectionContainer id="about">
       <div className="row">
         <div className="three columns">
-        <ProfilePic className="profile-pic"  src={profileImage} alt="Nick Chen Profile Pic" />
+          <ProfilePic className="profile-pic"  src={profileImage} alt="Nick Chen Profile Pic" />
         </div>
         <div className="nine columns main-col" style={{ paddingRight: '5%' }}>
           <h2>About Me</h2>

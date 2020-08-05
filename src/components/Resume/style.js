@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { device } from '../Device/device'
 
 export const ResumeContainer = styled.section`
   background: #fff;
@@ -28,14 +29,42 @@ export const ResumeContainer = styled.section`
   h3 {
     font: 25px/30px 'opensans-bold', sans-serif;
   }
+
+  @media ${device.laptop} {
+    h1 {
+      font: 16px / 24px 'opensans-bold',sans-serif;
+    }
+  }
+  @media ${device.tablet} {
+    h1 {
+      letter-spacing: 3px;
+    }
+
+    h3 {
+      text-align: center;
+    }
+  }
 `
 
 export const HeaderCol = styled.div`
   padding-top: 9px;
+
+  @media ${device.tablet} {
+    padding-top: 0;
+    margin-bottom: 48px;
+    text-align: center;
+  }
 `
 
 export const MainCol = styled.div`
   padding-right: 10%;
+
+  @media ${device.laptop} {
+    padding-right: 5%;
+  }
+  @media ${device.tablet} {
+    padding-right: 30px;
+  }
 `
 
 export const Work = styled.div`
@@ -45,7 +74,7 @@ export const Work = styled.div`
 `
 
 export const WorkInfo = styled.p`
-  font: 16px/24px 'librebaskerville-italic', serif;
+  font: 16px / 24px 'librebaskerville-italic', serif;
   color: #6E7881;
   margin-bottom: 18px;
   margin-top: 9px;
@@ -54,9 +83,13 @@ export const WorkInfo = styled.p`
     margin-right: 5px;
     margin-left: 5px;
   }
+
+  @media ${device.tablet} {
+    text-align: center;
+  }
 `
 
 export const WorkDate = styled.em`
-  font: 15px/24px 'opensans-regular', sans-serif;
+  font: 15px / 24px 'opensans-regular', sans-serif;
   margin-top: 6px;
 `
