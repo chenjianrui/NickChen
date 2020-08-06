@@ -1,0 +1,52 @@
+{
+  "data": {
+    "name": "Nick Chen",
+    "occupation":"",
+    "description":"",
+    "bio":"現職前端工程師，對於程式設計的工作充滿熱情，並且樂於學習新的技術。 在專業技能上，目前主要開發前端程式，熟悉 HTML 、 CSS 、JavaScript ...等。很熱衷於研究新技術，閒暇之餘，加強系統架構觀念與程式開發能力和參與技術社團，希望未來開發能夠更快速，具良好的 UI/UX 網站。",
+    "contactmessage":"",
+    "email": "jianrui.job@gmail.com",
+    "phone": "0936600335",
+    "address":{
+      "city":"Taipei, Taiwan",
+      "state":""
+    },
+    "social":[
+      {
+        "name":"linkedin",
+        "url":"https://tw.linkedin.com/in/%E5%BB%BA%E7%91%9E-%E9%99%B3-1045abb1",
+        "className":"faLinkedinIn"
+      },
+      {
+        "name":"github",
+        "url":"http://github.com/chenjianrui",
+        "className":"faGithub"
+      }
+    ],
+    "resume": {
+      "works": [
+        {
+          "company":"Vpon 威朋大數據",
+          "title":"Frontend Developer ",
+          "years":"10 月 2019 - 至今",
+          "description":"開發時多數時間使用原生 JavaScript 來撰寫 Web SDK，提供給 Publisher 以及內部人員使用，以及撰寫 Middleware 讓 Creative 與 Native App 進行溝通，在公司認識了各領域的工程師，定期舉辦 RD Sharing，藉此吸收新知識。",
+          "skills": "HTML5、CSS3、JavaScript、Node.js、Express、React"
+        },
+        {
+          "company":"研能科技",
+          "title":"Frontend Developer ",
+          "years":"06 月 2018 - 07 月 2019",
+          "description":"在新創部門裡，步調快了不少，公司開發與空污相關的產品，App 結合公司開發的硬體 Device 收集空污 Data，而在這裡獨立了開發 WebGIS 以及空氣平台查詢。",
+          "skills": "HTML5、CSS3、JavaScript、React、Redux、Styled-Components"
+        },
+        {
+          "company":"瑞新電子",
+          "title":"Frontend Developer ",
+          "years":"08 月 2016 - 05 月 2018",
+          "description":"瑞新電子是一間主要開發硬體，軟體部門開發與硬體溝通的 App，在裡面負責開發、維護官網、接案以及內部 CMS，雖然軟體人員只有五位，但彼此都會分享交流。",
+          "skills": "HTML5、CSS3、JavaScript、jQuery、GA"
+        }
+      ]
+    }
+  }
+}
