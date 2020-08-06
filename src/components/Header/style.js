@@ -47,7 +47,7 @@ export const BannerText = styled(motion.div)`
   width: 100%;
 
   h1 {
-    font: 12vw "Noto Serif";
+    font: 7vw "Noto Serif";
     color: #fff;
     letter-spacing: -2px;
     margin: 0 auto 18px auto;
@@ -74,7 +74,7 @@ export const BannerText = styled(motion.div)`
   }
   @media ${device.laptop} {
     h1 {
-      font-size: 12vw;
+      font-size: 5vw;
       letter-spacing: -1px;
       margin: 0 auto 12px auto;
     } 
