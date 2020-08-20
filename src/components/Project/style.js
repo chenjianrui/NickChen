@@ -4,7 +4,8 @@ import { device } from '../Device/device'
 export const ProjectContainer = styled.section`
   background: #fff;
   padding-top: 90px;
-  padding-bottom: 72px;
+  /* 高度不夠，從原本的 72px -> 270px */
+  padding-bottom: 270px;
   overflow: hidden;
 
   a, a:visited {

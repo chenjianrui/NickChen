@@ -20,9 +20,10 @@ const Project = () => {
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
+    autoplaySpeed: 5000
   };
   return (
-    <ProjectContainer id="resume">
+    <ProjectContainer id="project">
       <ProjectCol className="row">
         <HeaderCol className="three columns">
           <h1>
