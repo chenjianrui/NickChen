@@ -9,7 +9,7 @@ const carouselItem = ({ img, text, url }) => {
       <div>
         <img src={img}/>
       </div>
-      <p style={{ padding: '10px' }}>
+      <p style={{ padding: '10px', textAlign: 'center' }}>
         {text}
         { url && <a href={url} target='_blank'>連結 <FontAwesomeIcon icon={fas.faExternalLinkAlt}/></a> }
       </p>
