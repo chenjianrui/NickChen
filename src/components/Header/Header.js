@@ -53,6 +53,11 @@ const Header = ({ resumeData, show, isTop, navigation, setNavigation }) => {
               Resume
             </a>
           </li>
+          <li className={navigation === 'project' ? 'current' : ''}>
+            <a onClick={() => handleClickToElement('project')}>
+              Project
+            </a>
+          </li>
           {/* <li>
             <a onClick={() => handleClickToElement('works')}>
               Works
