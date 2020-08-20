@@ -4,6 +4,7 @@ import { useViewportScroll } from 'framer-motion'
 import Header from './components/Header/Header'
 import About from './components/About/About'
 import Resume from './components/Resume/Resume'
+import Project from './components/Project/Project'
 
 function App() {
   const [resumeData, setResumeData] = useState(null)
@@ -66,6 +67,7 @@ function App() {
           />
           <About resumeData={resumeData}/>
           <Resume resumeData={resumeData}/>
+          <Project resumeData={resumeData}/>
         </>
       }
     </>
