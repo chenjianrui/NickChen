@@ -31,7 +31,6 @@ const Header = ({ resumeData, show, isTop, navigation, setNavigation }) => {
 
   useEffect(() => {
     writing()
-    console.log('on')
   },[])
 
   const handleClickToElement = element => {

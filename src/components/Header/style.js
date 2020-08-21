@@ -64,6 +64,7 @@ export const BannerText = styled(motion.div)`
 
   h3::after{
     content: '|';
+    padding-left: 10px; 
   }
 
   h3.active::after{
