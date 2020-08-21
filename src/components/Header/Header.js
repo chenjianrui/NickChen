@@ -8,6 +8,31 @@ import HeaderBackground from '../../images/header-background.jpg'
 import { HeaderContainer, Banner, BannerText, Social, ScrollDown, NavWrap, MobileBtn, NavWrapUl } from './style'
 const Header = ({ resumeData, show, isTop, navigation, setNavigation }) => {
   const { name, social } = resumeData.data
+  const [text, setText] = useState({data: ''})
+  const [isActive, setIsActive] = useState(false)
+
+  const writing = (() => {
+    const data = 'Front-end Developer'.split('')
+    let index = 0
+    return () => {
+      if (index < data.length) {
+        setText(preState => {
+          if(preState.data.length >= 18){
+            setIsActive(true)
+          }
+          return {
+            data: preState.data + data[index]
+          }
+        })
+        setTimeout(writing, 200, ++index)
+      }
+    }
+  })()
+
+  useEffect(() => {
+    writing()
+    console.log('on')
+  },[])
 
   const handleClickToElement = element => {
     setNavigation(element)
@@ -74,6 +99,7 @@ const Header = ({ resumeData, show, isTop, navigation, setNavigation }) => {
           transition={{ delay: .5, duration: 1.5 }}
         >
           <h1 className="responsive-headline">I'm {name}.</h1>
+          <h3 className={isActive ? 'active' : ''}>{text.data}</h3>
           <hr />
             <Social className="social">
               {networks}

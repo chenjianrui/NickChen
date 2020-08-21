@@ -55,13 +55,29 @@ export const BannerText = styled(motion.div)`
   }
 
   h3 {
-    font: 18px/1.9em 'librebaskerville-regular', serif;
+    font: 40px/1.9em 'librebaskerville-regular', serif;
     color: #A8A8A8;
     margin: 0 auto;
     width: 70%;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
   }
 
+  h3::after{
+    content: '|';
+  }
+
+  h3.active::after{
+    content: '|';
+    animation: blink 1.5s infinite
+    }
+    @keyframes blink{
+      from{
+        opacity: 0;
+      }
+      to{
+        opacity: 1;
+      }
+    }
   h3 span, h3 a {
     color: #fff;
   }
