@@ -7,6 +7,7 @@ import air_map from '../../images/air_map.png'
 import apexa from '../../images/apexa.png'
 import wedding from '../../images/wedding.jpg'
 import gram from '../../images/gram.png'
+import github from '../../images/search-github.png'
 import CarouselItem from './CarouselItem'
 
 import { ProjectContainer, ProjectCol, HeaderCol, MainCol } from './style'
@@ -33,6 +34,11 @@ const Project = () => {
         <MainCol className="nine columns">
           <Slider {...settings}>
             <CarouselItem
+              url="https://github.jianruimmp.com"
+              img={github}
+              text="可搜尋使用者的視覺化呈現 Github 介面，可以一眼就看出使用者的相關 Github 資訊。"
+            />
+            <CarouselItem
               img={air_map}
               text="在研能科技開發的空氣地圖，結合政府空污站點以及公司開發的移動空污裝置，讓使用者可以找到離自己最近的空氣狀況。"
             />
@@ -47,7 +53,7 @@ const Project = () => {
             <CarouselItem
               url="https://gram.jianruimmp.com"
               img={gram}
-              text={`結合 Firebase、Firestore 來上傳圖片，可以瀏覽及儲存。`}
+              text="結合 Firebase、Firestore 來上傳圖片，可以瀏覽及儲存。"
             />
           </Slider>
         </MainCol>

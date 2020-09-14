@@ -30,7 +30,7 @@
           "title":"Frontend Developer ",
           "years":"10 月 2019 - 至今",
           "description":"開發時多數時間使用原生 JavaScript 來撰寫 Web SDK，提供給 Publisher 以及內部人員使用，以及撰寫 Middleware 讓 Creative 與 Native App 進行溝通，在公司認識了各領域的工程師，定期舉辦 RD Sharing，藉此吸收新知識。",
-          "skills": "HTML5、CSS3、JavaScript、Node.js、Express、React"
+          "skills": "HTML5、CSS3、JavaScript、Node.js、Express、React、Hooks、Context API"
         },
         {
           "company":"研能科技",
