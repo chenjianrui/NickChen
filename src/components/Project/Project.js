@@ -35,6 +35,7 @@ const Project = () => {
           <Slider {...settings}>
             <CarouselItem
               url="https://github.jianruimmp.com"
+              sourceCodeUrl="https://github.com/chenjianrui/search_github_demo"
               img={github}
               text="可搜尋使用者的視覺化呈現 Github 介面，可以一眼就看出使用者的相關 Github 資訊。"
             />
@@ -52,6 +53,7 @@ const Project = () => {
             />
             <CarouselItem
               url="https://gram.jianruimmp.com"
+              sourceCodeUrl="https://github.com/chenjianrui/fake-gram"
               img={gram}
               text="結合 Firebase、Firestore 來上傳圖片，可以瀏覽及儲存。"
             />
